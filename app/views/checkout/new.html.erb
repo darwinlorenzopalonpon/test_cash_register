@@ -1,0 +1,16 @@
+<%= form_with url: checkout_index_path, method: :post do |form| %>
+    <div>
+        <% @products.each do |product| %>
+            <h3><%= product.name %></h3>
+            <p>Price: <%= product.formatted_price %></p>
+            <p>Code: <%= product.product_code %></p>
+            
+            <%= number_field_tag "basket[#{product.product_code}]", 
+                                 params.dig(:basket, product.product_code) || 0, 
+                                 min: 0 %>
+            <%= label_tag "basket[#{product.product_code}]", "Quantity" %>
+        <% end %>
+    </div>
+    <br>
+  <%= form.submit "Checkout" %>
+<% end %>
