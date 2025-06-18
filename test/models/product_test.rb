@@ -48,7 +48,7 @@ class ProductTest < ActiveSupport::TestCase
       trigger_quantity: 2
     )
 
-    assert_difference 'Discount.count', -1 do
+    assert_difference "Discount.count", -1 do
       @product.destroy
     end
   end

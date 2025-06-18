@@ -27,11 +27,11 @@ class CheckoutControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should create checkout with valid basket" do
-    post checkout_index_path, params: { 
-      basket: { 
+    post checkout_index_path, params: {
+      basket: {
         @green_tea.product_code => "2",
-        @strawberries.product_code => "1" 
-      } 
+        @strawberries.product_code => "1"
+      }
     }
     assert_response :success
     assert_not_nil assigns(:result)

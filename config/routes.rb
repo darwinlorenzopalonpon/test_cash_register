@@ -14,5 +14,5 @@ Rails.application.routes.draw do
 
   root "checkout#new"
 
-  resources :checkout, only: [:new, :create]
+  resources :checkout, only: [ :new, :create ]
 end

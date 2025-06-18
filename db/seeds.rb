@@ -15,7 +15,7 @@
     product_code: "GR1",
     discount_type: "buy_one_get_one",
     discount_value: nil,
-    trigger_quantity: 2,
+    trigger_quantity: 2
   },
   {
     name: "Strawberries",
@@ -23,7 +23,7 @@
     product_code: "SR1",
     discount_type: "discount_amount",
     discount_value: 50,
-    trigger_quantity: 3,
+    trigger_quantity: 3
   },
   {
     name: "Coffee",
@@ -31,7 +31,7 @@
     product_code: "CF1",
     discount_type: "discount_percentage",
     discount_value: 33.33,
-    trigger_quantity: 3,
+    trigger_quantity: 3
   }
 ].each do |data|
   product_data = {

@@ -1,5 +1,5 @@
 class CheckoutController < ApplicationController
-  before_action :load_products, only: [:new]
+  before_action :load_products, only: [ :new ]
 
   def new
   end
