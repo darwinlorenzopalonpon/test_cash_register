@@ -1,11 +1,18 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name: MyString
-  price_cents: 1
-  product_code: MyString
-
-two:
-  name: MyString
-  price_cents: 1
-  product_code: MyString
+green_tea:
+  price_cents: 311
+  product_code: GR1
+  name: Green Tea
+strawberries:
+  price_cents: 500
+  product_code: STR1
+  name: Strawberries
+coffee:
+  price_cents: 1123
+  product_code: CF1
+  name: Coffee
+no_discount_product:
+  price_cents: 100
+  product_code: NO1
+  name: No Discount

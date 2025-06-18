@@ -5,7 +5,7 @@ class CheckoutController < ApplicationController
   end
 
   def create
-    # TODO: Implement shopping basket service
+    @result = PricingService.new(checkout_params).calculate_totals
   end
 
   private

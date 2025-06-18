@@ -10,11 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_06_17_081325) do
+ActiveRecord::Schema[8.0].define(version: 2025_06_17_125319) do
   create_table "discounts", force: :cascade do |t|
     t.integer "product_id", null: false
     t.string "discount_type"
-    t.integer "discount_value"
+    t.decimal "discount_value", precision: 5, scale: 2
     t.integer "trigger_quantity"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

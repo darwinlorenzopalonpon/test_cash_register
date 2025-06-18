@@ -1,13 +1,17 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  product: one
-  discount_type: MyString
-  discount_value: 1
-  trigger_quantity: 1
-
-two:
-  product: two
-  discount_type: MyString
-  discount_value: 1
-  trigger_quantity: 1
+green_tea_buy_one_get_one:
+  discount_type: buy_one_get_one
+  trigger_quantity: 2
+  discount_value:
+  product: green_tea
+strawberries_discount_amount:
+  discount_type: discount_amount
+  trigger_quantity: 3
+  discount_value: 50
+  product: strawberries
+coffee_discount_percentage:
+  discount_type: discount_percentage
+  trigger_quantity: 3
+  discount_value: 33.33
+  product: coffee
